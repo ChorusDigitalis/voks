@@ -1,0 +1,2 @@
+1, "Marie chantait" "marie.wav" "marie.txt";
+2, "Sophie mangeait..." "sophie.wav" "sophie.txt";
