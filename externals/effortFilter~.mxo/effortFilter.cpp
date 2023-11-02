@@ -8915,7 +8915,7 @@ class effortFilter : public dsp {
 	}
 	
 	virtual void instanceResetUserInterface() {
-		fVslider0 = FAUSTFLOAT(0.99);
+		fVslider0 = FAUSTFLOAT(1.0);
 	}
 	
 	virtual void instanceClear() {
@@ -8954,7 +8954,7 @@ class effortFilter : public dsp {
 	
 	virtual void buildUserInterface(UI* ui_interface) {
 		ui_interface->openVerticalBox("effortFilter");
-		ui_interface->addVerticalSlider("Effort", &fVslider0, FAUSTFLOAT(0.99), FAUSTFLOAT(0.0), FAUSTFLOAT(0.99), FAUSTFLOAT(0.01));
+		ui_interface->addVerticalSlider("Effort", &fVslider0, FAUSTFLOAT(1.0), FAUSTFLOAT(0.0), FAUSTFLOAT(1.2), FAUSTFLOAT(0.01));
 		ui_interface->closeBox();
 	}
 	
@@ -8964,24 +8964,23 @@ class effortFilter : public dsp {
 		FAUSTFLOAT* output0 = outputs[0];
 		double fSlow0 = double(fVslider0);
 		int iSlow1 = fSlow0 <= 1.0;
-		double fSlow2 = fSlow0 + -1.0;
-		double fSlow3 = 1.0 - fSlow0;
-		double fSlow4 = fConst0 / (std::pow(1e+01, 0.1 * ((iSlow1) ? 1e+01 * fSlow3 : 1e+01 * fSlow2)) + -1.0);
-		double fSlow5 = fSlow4 + std::sqrt(effortFilter_faustpower2_f(1.0 - fSlow4) + -1.0);
-		double fSlow6 = 1.0 - fSlow5;
-		double fSlow7 = 0.0 - fSlow6 / fSlow5;
-		double fSlow8 = fConst0 / (std::pow(1e+01, 0.1 * ((iSlow1) ? 45.0 * fSlow3 : 45.0 * fSlow2)) + -1.0);
-		double fSlow9 = fSlow8 + std::sqrt(effortFilter_faustpower2_f(1.0 - fSlow8) + -1.0);
-		double fSlow10 = 1.0 - fSlow9;
-		double fSlow11 = 0.0 - fSlow10 / fSlow9;
+		double fSlow2 = std::max<double>(0.01, ((iSlow1) ? 1.0 - fSlow0 : fSlow0 + -1.0));
+		double fSlow3 = fConst0 / (std::pow(1e+01, fSlow2) + -1.0);
+		double fSlow4 = fSlow3 + std::sqrt(effortFilter_faustpower2_f(1.0 - fSlow3) + -1.0);
+		double fSlow5 = 1.0 - fSlow4;
+		double fSlow6 = 0.0 - fSlow5 / fSlow4;
+		double fSlow7 = fConst0 / (std::pow(1e+01, 4.5 * fSlow2) + -1.0);
+		double fSlow8 = fSlow7 + std::sqrt(effortFilter_faustpower2_f(1.0 - fSlow7) + -1.0);
+		double fSlow9 = 1.0 - fSlow8;
+		double fSlow10 = 0.0 - fSlow9 / fSlow8;
 		for (int i0 = 0; i0 < count; i0 = i0 + 1) {
 			double fTemp0 = double(input0[i0]);
 			fVec0[0] = fTemp0;
-			double fTemp1 = fTemp0 / fSlow9 + fVec0[1] * fSlow11;
+			double fTemp1 = fTemp0 / fSlow8 + fVec0[1] * fSlow10;
 			fVec1[0] = fTemp1;
-			fRec1[0] = double(input1[i0]) + fSlow10 * fRec1[1];
-			fRec0[0] = fRec1[0] * fSlow9 + fSlow6 * fRec0[1];
-			output0[i0] = FAUSTFLOAT(((iSlow1) ? fRec0[0] * fSlow5 : fTemp1 / fSlow5 + fVec1[1] * fSlow7));
+			fRec1[0] = double(input1[i0]) + fSlow9 * fRec1[1];
+			fRec0[0] = fRec1[0] * fSlow8 + fSlow5 * fRec0[1];
+			output0[i0] = FAUSTFLOAT(((iSlow1) ? fRec0[0] * fSlow4 : fTemp1 / fSlow4 + fVec1[1] * fSlow6));
 			fVec0[1] = fVec0[0];
 			fVec1[1] = fVec1[0];
 			fRec1[1] = fRec1[0];
@@ -9001,10 +9000,10 @@ class effortFilter : public dsp {
 	#define FAUST_ACTIVES 1
 	#define FAUST_PASSIVES 0
 
-	FAUST_ADDVERTICALSLIDER("Effort", fVslider0, 0.99, 0.0, 0.99, 0.01);
+	FAUST_ADDVERTICALSLIDER("Effort", fVslider0, 1.0, 0.0, 1.2, 0.01);
 
 	#define FAUST_LIST_ACTIVES(p) \
-		p(VERTICALSLIDER, Effort, "Effort", fVslider0, 0.99, 0.0, 0.99, 0.01) \
+		p(VERTICALSLIDER, Effort, "Effort", fVslider0, 1.0, 0.0, 1.2, 0.01) \
 
 	#define FAUST_LIST_PASSIVES(p) \
 
