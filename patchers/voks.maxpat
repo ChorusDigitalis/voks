@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 95.0, -945.0, 1325.0, 772.0 ],
+		"rect" : [ 95.0, 87.0, 1325.0, 772.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -178,8 +178,8 @@
 					"patching_rect" : [ 37.0, 61.0, 67.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"allwindowsactive" : 1,
-						"appicon_mac" : "",
-						"appicon_win" : "",
+						"appicon_mac" : "CANTOR:/Users/Gregoire/Desktop/code/voks/media/voks.icns",
+						"appicon_win" : "CANTOR:/Users/Gregoire/Desktop/code/voks/media/voks.ico",
 						"audiosupport" : 1,
 						"bundleidentifier" : "com.mycompany.myprogram",
 						"cantclosetoplevelpatchers" : 1,
@@ -350,112 +350,102 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "audioStatus.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "controlPoints.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "controllers.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "effortFilter.gendsp",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/code",
-				"patcherrelativepath" : "../code",
-				"type" : "gDSP",
-				"implicit" : 1
+				"name" : "effortFilter~.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "fader.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fileSelection.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "firstSyllable.js",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/code",
+				"bootpath" : "~/Desktop/code/voks/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "glottalTensionFilter.gendsp",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/code",
+				"bootpath" : "~/Desktop/code/voks/code",
 				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "marie.txt",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/data",
-				"patcherrelativepath" : "../data",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "param.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "parameters.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pitchController.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "presetLoader.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "presetManager.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rhythm.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rhythmController.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -466,35 +456,35 @@
 			}
 , 			{
 				"name" : "sample.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "scrubMode.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sigma.gendsp",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/code",
+				"bootpath" : "~/Desktop/code/voks/code",
 				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "soundEffects.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "speedMode.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -505,35 +495,28 @@
 			}
 , 			{
 				"name" : "syllabicMode.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "syllabicTimeIndex.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "utterances.txt",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/data",
-				"patcherrelativepath" : "../data",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "vocalEffects.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "voksEngine.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
