@@ -178,8 +178,8 @@
 					"patching_rect" : [ 37.0, 61.0, 67.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"allwindowsactive" : 1,
-						"appicon_mac" : "CANTOR:/Users/Gregoire/Desktop/code/voks/resources/icon/voks.icns",
-						"appicon_win" : "CANTOR:/Users/Gregoire/Desktop/code/voks/resources/icon/voks.ico",
+						"appicon_mac" : "CANTOR:/Users/Gregoire/Desktop/code/voks/resources/voks.icns",
+						"appicon_win" : "CANTOR:/Users/Gregoire/Desktop/code/voks/resources/voks.ico",
 						"audiosupport" : 1,
 						"bundleidentifier" : "com.mycompany.myprogram",
 						"cantclosetoplevelpatchers" : 1,
