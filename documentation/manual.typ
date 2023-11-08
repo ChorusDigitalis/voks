@@ -66,6 +66,8 @@ To use a Wacom graphics tablet to control Voks, you need to first install this d
 
 == Loading default data
 
+Copy the `data/` subdirectory from the Git directory, and replace the path in the line starting with `prefix` to the path of the copied directory. The path should end with `data/` (the slash / is mandatory).
+
 Click the _Load utterance file..._ button on the left panel. A file dialog opens; navigate to the `data` directory and select the `utterances.txt` file.
 
 == Selecting the right controller
@@ -158,18 +160,25 @@ Note that the starting timestamp is 0. but doesn't need to be. Also notice that 
 
 The utterance file is a convenient way to quickly access a bunch of sample-labeling pairs of files at once. Its syntax resembles that of labeling files (both are instances of the Max language's `coll` syntax).
 
-An utterance file is a text file whose each line comprises:
-- A whole number identifier,
-- A comma,
-- Three strings, each delimited by a pair of quotes `"`, and separated by spaces:
-  - An identifier which can be any string you want; it will appear in Voks' graphical interface,
-  - The path to your sample audio file (see above),
-  - The path to your labeling text file (see above);
-- A newline character.
+An utterance file is composed of:
+- A first line featuring:
+  - The word "prefix",
+  - A comma, followed by a space,
+  - A path prefix enclosed in double quotes. The path must end with a slash "/",
+  - A semicolon.
+- A certain number of lines composed of:
+  - A whole number identifier (first line of this group gets number 1, second one gets 2, and so on),
+  - A comma, followed by a space,
+  - Three strings, each delimited by a pair of quotes `"`, and separated by spaces:
+    - An identifier which can be any string you want; it will appear in Voks' graphical interface,
+    - The path to your sample audio file (see above),
+    - The path to your labeling text file (see above);
+  - A semicolon
 
 Here is an example of a valid utterance file:
 
 ```
+prefix, "/path/to/my/data/directory/";
 1, "Marie" "/path/to/samps/marie.wav" "/path/to/labs/marie.txt";
 2, "Sophie" "/path/to/samps/sophie.wav" "/path/to/labs/sophie.txt";
 ```
