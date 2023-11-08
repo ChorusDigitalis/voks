@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -377,7 +377,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 524.666666666666742, 386.0, 105.0, 22.0 ],
+					"patching_rect" : [ 524.666666666666742, 386.0, 119.0, 22.0 ],
 					"text" : "buffer~ #0-sample"
 				}
 
@@ -413,7 +413,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 47.099999999999994, 552.0, 596.0, 22.0 ],
+					"patching_rect" : [ 47.099999999999994, 552.0, 610.0, 22.0 ],
 					"text" : "supervp.scrub~ #0-sample 1 1024 0 4 @transients on @shapeinv off @envtrans on @maxfreq 200 @remix on"
 				}
 
@@ -609,7 +609,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 1 ],
-					"midpoints" : [ 705.166666666666742, 217.5, 619.166666666666742, 217.5 ],
+					"midpoints" : [ 705.166666666666742, 216.5, 619.166666666666742, 216.5 ],
 					"source" : [ "obj-25", 1 ]
 				}
 
@@ -689,7 +689,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
-					"midpoints" : [ 620.166666666666742, 419.0, 506.833333333333371, 419.0, 506.833333333333371, 248.0, 534.166666666666742, 248.0 ],
+					"midpoints" : [ 634.166666666666742, 419.0, 506.833333333333371, 419.0, 506.833333333333371, 248.0, 534.166666666666742, 248.0 ],
 					"source" : [ "obj-5", 1 ]
 				}
 

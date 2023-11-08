@@ -2,8 +2,8 @@
 	"name" : "Voks",
 	"version" : 1,
 	"creationdate" : 3761137256,
-	"modificationdate" : 3777284521,
-	"viewrect" : [ 83.0, 94.0, 300.0, 663.0 ],
+	"modificationdate" : 3782305474,
+	"viewrect" : [ 102.0, 160.0, 300.0, 663.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -14,7 +14,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+					"bootpath" : "~/Desktop/code/voks/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -24,7 +24,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+					"bootpath" : "~/Desktop/code/voks/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -44,7 +44,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+					"bootpath" : "~/Desktop/code/voks/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -54,7 +54,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+					"bootpath" : "~/Desktop/code/voks/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -64,7 +64,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+					"bootpath" : "~/Desktop/code/voks/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -84,7 +84,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+					"bootpath" : "~/Desktop/code/voks/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -94,7 +94,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+					"bootpath" : "~/Desktop/code/voks/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -104,7 +104,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+					"bootpath" : "~/Desktop/code/voks/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -114,7 +114,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+					"bootpath" : "~/Desktop/code/voks/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -124,7 +124,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+					"bootpath" : "~/Desktop/code/voks/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -139,7 +139,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+					"bootpath" : "~/Desktop/code/voks/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -149,7 +149,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+					"bootpath" : "~/Desktop/code/voks/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -159,7 +159,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+					"bootpath" : "~/Desktop/code/voks/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -169,7 +169,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+					"bootpath" : "~/Desktop/code/voks/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -179,7 +179,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+					"bootpath" : "~/Desktop/code/voks/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -189,7 +189,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+					"bootpath" : "~/Desktop/code/voks/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -199,7 +199,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+					"bootpath" : "~/Desktop/code/voks/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -210,7 +210,7 @@
 				"local" : 1,
 				"toplevel" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+					"bootpath" : "~/Desktop/code/voks/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -259,11 +259,6 @@
 				"local" : 1
 			}
 ,
-			"effortFilter.gendsp" : 			{
-				"kind" : "gendsp",
-				"local" : 1
-			}
-,
 			"glottalTensionFilter.gendsp" : 			{
 				"kind" : "gendsp",
 				"local" : 1
@@ -274,11 +269,21 @@
 				"local" : 1
 			}
 ,
+			"effortFilter.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Desktop/code/voks/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
 			"interface.js" : 			{
 				"kind" : "javascript",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/code",
+					"bootpath" : "~/Desktop/code/voks/code",
 					"projectrelativepath" : "./code"
 				}
 
@@ -288,7 +293,7 @@
 				"kind" : "javascript",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/code",
+					"bootpath" : "~/Desktop/code/voks/code",
 					"projectrelativepath" : "./code"
 				}
 
@@ -309,7 +314,7 @@
 				"kind" : "stylesheet",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/code",
+					"bootpath" : "~/Desktop/code/voks/code",
 					"projectrelativepath" : "./code"
 				}
 
@@ -319,7 +324,7 @@
 				"kind" : "webpage",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/Voks/code",
+					"bootpath" : "~/Desktop/code/voks/code",
 					"projectrelativepath" : "./code"
 				}
 

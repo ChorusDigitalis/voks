@@ -1,2 +1,3 @@
+prefix, "/path/to/data/directory/";
 1, "Marie chantait" "marie.wav" "marie.txt";
 2, "Sophie mangeait..." "sophie.wav" "sophie.txt";

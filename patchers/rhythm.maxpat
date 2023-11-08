@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 3,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -114,12 +114,13 @@
 , 			{
 				"box" : 				{
 					"bubble" : 1,
+					"bubbleside" : 3,
 					"id" : "obj-30",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 646.988888888889051, 165.5, 162.0, 51.0 ],
+					"patching_rect" : [ 365.888888888888914, 161.5, 162.0, 51.0 ],
 					"text" : "make sure read messages are sent with an accompanying filepath"
 				}
 
@@ -305,7 +306,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 664.488888888888937, 399.0, 57.0, 22.0 ],
+					"patching_rect" : [ 664.488888888888937, 399.0, 70.0, 22.0 ],
 					"text" : "r #0-toAll"
 				}
 
@@ -317,7 +318,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 496.655555555555566, 371.0, 83.0, 22.0 ],
+					"patching_rect" : [ 496.655555555555566, 371.0, 97.0, 22.0 ],
 					"text" : "r #0-toCurrent"
 				}
 
@@ -328,7 +329,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 400.888888888888914, 257.25, 85.0, 22.0 ],
+					"patching_rect" : [ 400.888888888888914, 257.25, 99.0, 22.0 ],
 					"text" : "s #0-toCurrent"
 				}
 
@@ -339,7 +340,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 188.905555555555566, 412.0, 59.0, 22.0 ],
+					"patching_rect" : [ 188.905555555555566, 412.0, 72.0, 22.0 ],
 					"text" : "s #0-toAll"
 				}
 
@@ -362,7 +363,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 711.488888888888937, 458.0, 87.0, 22.0 ],
+					"patching_rect" : [ 711.488888888888937, 458.0, 100.0, 22.0 ],
 					"text" : "s #0-toSyllabic"
 				}
 
@@ -373,7 +374,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 687.988888888888937, 484.0, 80.0, 22.0 ],
+					"patching_rect" : [ 687.988888888888937, 484.0, 93.0, 22.0 ],
 					"text" : "s #0-toSpeed"
 				}
 
@@ -384,7 +385,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 664.488888888888937, 510.0, 77.0, 22.0 ],
+					"patching_rect" : [ 664.488888888888937, 510.0, 90.0, 22.0 ],
 					"text" : "s #0-toScrub"
 				}
 
@@ -395,7 +396,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 529.888888888888914, 257.25, 59.0, 22.0 ],
+					"patching_rect" : [ 529.888888888888914, 257.25, 72.0, 22.0 ],
 					"text" : "s #0-toAll"
 				}
 
@@ -418,7 +419,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 496.655555555555566, 520.0, 87.0, 22.0 ],
+					"patching_rect" : [ 496.655555555555566, 520.0, 100.0, 22.0 ],
 					"text" : "s #0-toSyllabic"
 				}
 
@@ -429,7 +430,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 403.822222222222308, 520.0, 80.0, 22.0 ],
+					"patching_rect" : [ 403.822222222222308, 520.0, 93.0, 22.0 ],
 					"text" : "s #0-toSpeed"
 				}
 
@@ -440,7 +441,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 310.988888888888937, 520.0, 77.0, 22.0 ],
+					"patching_rect" : [ 310.988888888888937, 520.0, 90.0, 22.0 ],
 					"text" : "s #0-toScrub"
 				}
 
@@ -452,7 +453,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 174.988888888888937, 731.0, 75.0, 22.0 ],
+					"patching_rect" : [ 174.988888888888937, 731.0, 88.0, 22.0 ],
 					"text" : "r #0-toScrub"
 				}
 
@@ -464,7 +465,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 276.488888888888994, 731.0, 78.0, 22.0 ],
+					"patching_rect" : [ 276.488888888888994, 731.0, 91.0, 22.0 ],
 					"text" : "r #0-toSpeed"
 				}
 
@@ -476,7 +477,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 377.988888888888937, 731.0, 85.0, 22.0 ],
+					"patching_rect" : [ 377.988888888888937, 731.0, 98.0, 22.0 ],
 					"text" : "r #0-toSyllabic"
 				}
 
@@ -487,7 +488,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 304.0, 257.25, 87.0, 22.0 ],
+					"patching_rect" : [ 304.0, 257.25, 100.0, 22.0 ],
 					"text" : "s #0-toSyllabic"
 				}
 
@@ -510,7 +511,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 207.111111111111143, 257.25, 80.0, 22.0 ],
+					"patching_rect" : [ 207.111111111111143, 257.25, 93.0, 22.0 ],
 					"text" : "s #0-toSpeed"
 				}
 
@@ -521,7 +522,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 110.222222222222285, 257.25, 77.0, 22.0 ],
+					"patching_rect" : [ 110.222222222222285, 257.25, 90.0, 22.0 ],
 					"text" : "s #0-toScrub"
 				}
 
@@ -947,7 +948,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
-					"midpoints" : [ 626.388888888888914, 204.5, 539.388888888888914, 204.5 ],
+					"midpoints" : [ 626.388888888888914, 205.5, 539.388888888888914, 205.5 ],
 					"source" : [ "obj-6", 1 ]
 				}
 
@@ -990,56 +991,49 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "controlPoints.maxpat",
-				"bootpath" : "~/Desktop/code/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "correctTarget.js",
-				"bootpath" : "~/Desktop/code/Voks/code",
-				"patcherrelativepath" : "../code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fader.js",
-				"bootpath" : "~/Desktop/code/Voks/code",
-				"patcherrelativepath" : "../code",
-				"type" : "TEXT",
+				"name" : "fader.maxpat",
+				"bootpath" : "~/Desktop/code/voks/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "firstSyllable.js",
-				"bootpath" : "~/Desktop/code/Voks/code",
+				"bootpath" : "~/Desktop/code/voks/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "scrubMode.maxpat",
-				"bootpath" : "~/Desktop/code/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "speedMode.maxpat",
-				"bootpath" : "~/Desktop/code/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "syllabicMode.maxpat",
-				"bootpath" : "~/Desktop/code/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "syllabicTimeIndex.maxpat",
-				"bootpath" : "~/Desktop/code/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
