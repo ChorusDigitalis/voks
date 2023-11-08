@@ -1,6 +1,6 @@
 /* ------------------------------------------------------------
 name: "effortFilter"
-Code generated with Faust 2.68.1 (https://faust.grame.fr)
+Code generated with Faust 2.69.0 (https://faust.grame.fr)
 Compilation options: -a /usr/local/share/faust/max-msp/max-msp64.cpp -lang cpp -i -ct 1 -cn effortFilter -es 1 -mcd 16 -uim -double -ftz 0
 ------------------------------------------------------------ */
 
@@ -140,12 +140,12 @@ Compilation options: -a /usr/local/share/faust/max-msp/max-msp64.cpp -lang cpp -
 #define __export__
 
 // Version as a global string
-#define FAUSTVERSION "2.68.1"
+#define FAUSTVERSION "2.69.0"
 
 // Version as separated [major,minor,patch] values
 #define FAUSTMAJORVERSION 2
-#define FAUSTMINORVERSION 68
-#define FAUSTPATCHVERSION 1
+#define FAUSTMINORVERSION 69
+#define FAUSTPATCHVERSION 0
 
 // Use FAUST_API for code that is part of the external API but is also compiled in faust and libfaust
 // Use LIBFAUST_API for code that is compiled in faust and libfaust
@@ -7644,7 +7644,7 @@ struct JuceReader : public SoundfileReader {
         if (file.existsAsFile()) {
             return true;
         } else {
-            std::cerr << "ERROR : cannot open '" << path_name << "'" << std::endl;
+            //std::cerr << "ERROR : cannot open '" << path_name << "'" << std::endl;
             return false;
         }
     }
@@ -8893,7 +8893,7 @@ class effortFilter : public dsp {
 		m->declare("maths.lib/copyright", "GRAME");
 		m->declare("maths.lib/license", "LGPL with exception");
 		m->declare("maths.lib/name", "Faust Math Library");
-		m->declare("maths.lib/version", "2.6.0");
+		m->declare("maths.lib/version", "2.7.0");
 		m->declare("name", "effortFilter");
 		m->declare("platform.lib/name", "Generic Platform Library");
 		m->declare("platform.lib/version", "1.3.0");
@@ -8967,20 +8967,18 @@ class effortFilter : public dsp {
 		double fSlow2 = std::max<double>(0.01, ((iSlow1) ? 1.0 - fSlow0 : fSlow0 + -1.0));
 		double fSlow3 = fConst0 / (std::pow(1e+01, fSlow2) + -1.0);
 		double fSlow4 = fSlow3 + std::sqrt(effortFilter_faustpower2_f(1.0 - fSlow3) + -1.0);
-		double fSlow5 = 1.0 - fSlow4;
-		double fSlow6 = 0.0 - fSlow5 / fSlow4;
-		double fSlow7 = fConst0 / (std::pow(1e+01, 4.5 * fSlow2) + -1.0);
-		double fSlow8 = fSlow7 + std::sqrt(effortFilter_faustpower2_f(1.0 - fSlow7) + -1.0);
-		double fSlow9 = 1.0 - fSlow8;
-		double fSlow10 = 0.0 - fSlow9 / fSlow8;
+		double fSlow5 = fConst0 / (std::pow(1e+01, 4.5 * fSlow2) + -1.0);
+		double fSlow6 = fSlow5 + std::sqrt(effortFilter_faustpower2_f(1.0 - fSlow5) + -1.0);
+		double fSlow7 = 1.0 - fSlow6;
+		double fSlow8 = 1.0 - fSlow4;
 		for (int i0 = 0; i0 < count; i0 = i0 + 1) {
 			double fTemp0 = double(input0[i0]);
 			fVec0[0] = fTemp0;
-			double fTemp1 = fTemp0 / fSlow8 + fVec0[1] * fSlow10;
+			double fTemp1 = (fTemp0 - fVec0[1] * fSlow7) / fSlow6;
 			fVec1[0] = fTemp1;
-			fRec1[0] = double(input1[i0]) + fSlow9 * fRec1[1];
-			fRec0[0] = fRec1[0] * fSlow8 + fSlow5 * fRec0[1];
-			output0[i0] = FAUSTFLOAT(((iSlow1) ? fRec0[0] * fSlow4 : fTemp1 / fSlow4 + fVec1[1] * fSlow6));
+			fRec1[0] = double(input1[i0]) + fSlow7 * fRec1[1];
+			fRec0[0] = fRec1[0] * fSlow6 + fSlow8 * fRec0[1];
+			output0[i0] = FAUSTFLOAT(((iSlow1) ? fRec0[0] * fSlow4 : (fTemp1 - fSlow8 * fVec1[1]) / fSlow4));
 			fVec0[1] = fVec0[0];
 			fVec1[1] = fVec1[0];
 			fRec1[1] = fRec1[0];
