@@ -1,3 +1,15 @@
+//   This is the source of the Voks manual. You should have gotten the manual
+// itself, in the form of a PDF file, in the same repository.
+//   It is written in Typst, a markup language comparable to LaTeX. To compile
+// it yourself, you can install the Typst compiler from here:
+// https://github.com/typst/typst/releases/ and just run:
+// typst compile manual.typ
+//   Alternatively, you can just scroll down and read the source in this file:
+// the first ~50 lines are code that defines what the document should look like
+// (and should probably be moved to another file...), but humans should be able
+// to read the document body that follows with ease.
+
+
 #let title(content) = [
   #set text(size: 20pt)
   #set align(center)
@@ -183,7 +195,28 @@ prefix, "/path/to/my/data/directory/";
 2, "Sophie" "/path/to/samps/sophie.wav" "/path/to/labs/sophie.txt";
 ```
 
-= Interface
+= Controller devices
+
+== Graphic tablet
+
+To use a Wacom graphics tablet to control Voks, you need to first install this driver:
+https://www.wacom.com/fr-fr/support/product-support/drivers
+
+In the _Controller selection_ panel, click on the _Rhythm_ tab and select the spacebar. Click on the _Pitch_ tab, select _Tablet_ as the _Pitch controller_ and find your tablet in the _Selected device_ list.
+
+== Theremin
+
+Connect the audio output of your theremin to the computer. In the audio driver panel, select teh correct input device.
+
+== MIDI controller
+
+Elements such as sliders can be controlled with a hardware MIDI controller through the use of MIDI learn. To enable MIDI control from your controller:
+- Click the button _Enter MIDI learn mode_ at the bottom of the _Controller selection_ panel.
+- Click the user interface element that you wish to control with your MIDI controller.
+- Interact with the corresponding slider/button on your hardware controller.
+- Hit the escape key.
+
+= Graphical interface
 
 #image("interface.png", width: 90%)
 
