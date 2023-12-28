@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 385.0, -799.0, 479.0, 623.0 ],
+		"rect" : [ 301.0, 312.0, 479.0, 623.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -58,6 +58,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
+					"parameter_mappable" : 0,
 					"patching_rect" : [ 305.0, 50.0, 24.0, 24.0 ]
 				}
 
@@ -396,6 +397,7 @@
 					"outlettype" : [ "bang" ],
 					"outlinecolor" : [ 0.870588235294118, 0.870588235294118, 0.870588235294118, 1.0 ],
 					"parameter_enable" : 0,
+					"parameter_mappable" : 0,
 					"patching_rect" : [ 578.0, -17.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 137.0, 76.0, 24.0, 24.0 ]
@@ -427,6 +429,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
+					"parameter_mappable" : 0,
 					"patching_rect" : [ 492.5, -17.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 137.0, 108.0, 24.0, 24.0 ],
@@ -450,7 +453,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-20",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -732,6 +735,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
+					"parameter_mappable" : 0,
 					"patching_rect" : [ 141.0, 435.0, 100.0, 25.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 137.0, 14.0, 100.0, 25.0 ],
@@ -753,12 +757,13 @@
 					"elementcolor" : [ 0.349019607843137, 0.349019607843137, 0.349019607843137, 1.0 ],
 					"hidden" : 1,
 					"id" : "obj-1",
-					"items" : [ "All tablets and tools", ",", "<separator>", ",", "(0: Intuos Pro M / all tools)", ",", "(0: Intuos Pro M / 1: Grip Pen)", ",", "<separator>", ",", "1: Intuos Pro M / all tools", ",", "1: Intuos Pro M / 1: Grip Pen", ",", "1: Intuos Pro M / 2: Pro Pen 2" ],
+					"items" : [ "All tablets and tools", ",", "<separator>", ",", "(0: Intuos Pro M / all tools)", ",", "(0: Intuos Pro M / 1: Grip Pen)", ",", "<separator>", ",", "(1: Intuos PT M / all tools)", ",", "(1: Intuos PT M / 1: Stylet)", ",", "<separator>", ",", "(2: Intuos Pro M / all tools)", ",", "(2: Intuos Pro M / 1: Pro Pen 2)", ",", "(2: Intuos Pro M / 2: Grip Pen)", ",", "<separator>", ",", "(3: Intuos5 PT M / all tools)", ",", "(3: Intuos5 PT M / 1: Grip Pen)" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
+					"parameter_mappable" : 0,
 					"patching_rect" : [ 749.000000000000114, 143.0, 100.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 137.0, 46.0, 100.0, 22.0 ],
@@ -1478,6 +1483,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
+					"parameter_mappable" : 0,
 					"patching_rect" : [ 593.0, 548.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 137.0, 46.0, 24.0, 24.0 ],
@@ -2119,7 +2125,13 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "s2m.wacom.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

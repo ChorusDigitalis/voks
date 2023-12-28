@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 95.0, 87.0, 1325.0, 772.0 ],
+		"rect" : [ 75.0, 145.0, 1325.0, 772.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,50 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"fontname" : "Avenir Next",
+					"id" : "obj-18",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"parameter_mappable" : 0,
+					"patching_rect" : [ 426.0, 431.0, 270.0, 28.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 337.0, 277.0, 270.0, 28.0 ],
+					"rounded" : 10.0,
+					"text" : "Enter MIDI learn mode (press ESC to escape)",
+					"texton" : "Enter MIDI learn mode (press ESC to escape)",
+					"textoncolor" : [ 0.215686274509804, 0.396078431372549, 0.474509803921569, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 426.0, 476.0, 41.0, 22.0 ],
+					"text" : "midi 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 426.0, 506.0, 61.0, 22.0 ],
+					"text" : "mappings"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.274509803921569, 0.470588235294118, 0.549019607843137, 1.0 ],
 					"bgmode" : 2,
@@ -278,6 +322,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}

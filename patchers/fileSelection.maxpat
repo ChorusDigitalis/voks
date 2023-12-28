@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 146.0, 97.0, 902.0, 719.0 ],
+		"rect" : [ 97.0, 167.0, 902.0, 719.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -303,6 +303,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
+					"parameter_mappable" : 0,
 					"patching_rect" : [ 49.5, 33.0, 100.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 52.0, 31.0, 144.0, 25.0 ],

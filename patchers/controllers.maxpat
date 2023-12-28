@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 602.0, 87.0, 377.0, 611.0 ],
+		"rect" : [ 590.0, 135.0, 377.0, 611.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -192,6 +192,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
+					"parameter_mappable" : 0,
 					"patching_rect" : [ 51.0, 228.0, 212.0, 25.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 67.0, 42.0, 212.0, 25.0 ],
@@ -286,14 +287,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "pitchController.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rhythmController.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Voks/patchers",
+				"bootpath" : "~/Desktop/code/voks/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
